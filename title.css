@@ -1,0 +1,12 @@
+body {
+	font-family: georgia;
+	color: white;
+}
+h1 {
+	background-color: MediumSeaGreen;
+	text-align: center;
+	font-family: helvetica;
+}
+p {
+	color: MediumSeaGreen;
+}

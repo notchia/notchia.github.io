@@ -1,14 +1,29 @@
+:root {
+  --main-color: #0ca889;
+  --light-color: #89f0db;
+  --text-color: #000000;
+  --background: #ffffff;
+}
+
 body {
 	font-family: georgia;
-	color: white;
 }
+
 h1 {
-	background-color: MediumSeaGreen;
+	color: var(--background);
+	background-color: var(--main-color);
 	text-align: center;
 	font-family: helvetica;
 }
+
+nav {
+	color: var(--background);
+	background-color: var(--main-color);
+	font-family: helvetica;
+}
+
 p {
-	color: MediumSeaGreen;
+	color: var(--text-color:);
 }
 
 img {
@@ -17,19 +32,19 @@ img {
 }
 
 a:link {
-  color: MediumSeaGreen;
+  color: var(--light-color);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: blue;
+  color: var(--light-color);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
-  background-color: MediumSeaGreen;
+  color: var(--background);
+  background-color: var(--main-color);
   text-decoration: none;
 }

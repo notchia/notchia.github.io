@@ -5,6 +5,7 @@
   --color-medium: #258a00;
   --color-dark: #132400;
   --page-width: 800px;
+  --small-width: 600px;
 }
 
 html, body {
@@ -51,9 +52,13 @@ p {
 	color: var(--color-dark);
 }
 
+ul {
+	max-width: var(--small-width);
+}
+
 img {
 	width: 100%;
-	max-width: var(--page-width);
+	max-width: var(--small-width);
 	margin-left: auto;
 	margin-right: auto;
 }

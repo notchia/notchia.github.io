@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Merriweather+Sans:wght@700');
+
 :root {
   --color-background: #ffffff;
-  --color-highlight: #ffcc0f;
-  --color-light: #cfff96;
-  --color-medium: #258a00;
-  --color-dark: #132400;
+  --color-highlight: #ffce1c;
+  --color-light: #e1ffbd;
+  --color-medium: #5ec01d;
+  --color-medium-dark: #0f693f;
+  --color-dark: #242424;
   --page-width: 800px;
-  --small-width: 600px;
+  --small-width: 800px;
 }
 
 html, body {
@@ -13,12 +16,12 @@ html, body {
 }
 
 body {
-	font-family: courier;
+	font-family: "Libre Franklin", courier;
 	font-size: 100%;
 	background-color: var(--color-background);
 	color: var(--color-dark);
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: var(--page-width);
@@ -37,15 +40,32 @@ body {
 }
 
 h1 {
+	font-family: "Merriweather Sans", "Libre Franklin", courier;
+	font-size: 400%;
 	text-align: center;
-	text-decoration: bold;
-	color: var(--color-medium);
+	color: var(--color-dark);
+	user-select: none;
 }
 
 nav {
-	color: var(--color-dark);
-	background-color: var(--color-light);
-	padding: 0px 5px 0px 5px;
+	padding: 5px;
+	border-radius: 25px;
+	font-family: "Libre Franklin", courier;
+	background-color: var(--color-dark);
+	color: var(--color-background);
+	text-align: center;
+	text-decoration: bold;
+}
+.nav a:link, a:visited {
+	color: var(--color-background);
+	background-color: transparent;
+	text-decoration: none;
+}
+.nav a:hover {
+	background: -webkit-linear-gradient(60deg, var(--color-medium) 25%, var(--color-light) 75%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-decoration: none;
 }
 
 p {
@@ -64,12 +84,12 @@ img {
 }
 
 a:link, a:visited {
-  color: var(--color-medium);
-  background-color: transparent;
-  text-decoration: underline;
+	color: var(--color-medium);
+	background-color: transparent;
+	text-decoration: underline;
 }
 a:hover {
-  color: var(--color-dark);
-  background-color: var(--color-highlight);
-  text-decoration: none;
+	color: var(--color-dark);
+	background-color: var(--color-highlight);
+	text-decoration: none;
 }
